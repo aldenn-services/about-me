@@ -1,0 +1,28 @@
+.aldenn {
+  display: flex;
+  flex-wrap: wrap;
+  .wrap-sidebar {
+    width: 25%;
+    @include ipad {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      width: 100%;
+    }
+  }
+
+  .wrap-main {
+    width: 75%;
+    @include ipad {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      width: 100%;
+    }
+  }
+
+  .wrap-sidebar,
+  .wrap-main {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+  }
+}
