@@ -1,0 +1,12 @@
+.what-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .what-item {
+    width: 48%;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
